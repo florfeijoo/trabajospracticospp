@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@0,100;1,500&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+}
+
+/*------------------TIPOGRAFIAS Y ESTILOS--------------------*/
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.condens {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.fw100 {
+    font-weight: 100;
+}
+
+.parrafo p {
+    font-size: 15pt;
+}
+
+
+/*--------  COLORES  --------*/
+
+.fondo {
+    background-color: #060614;
+}
+
+.azules {
+    background-color: #323286;
+}
+
+.violeta {
+    background-color: #ac6bd6;
+}
+
+.blanco_txt {
+    color: white;
+}
+
+.rojo {
+    background-color: rgb(145, 88, 156);
+}
+
+.verde {
+    background-color: rgb(129, 163, 152);
+}
+
+.naranja {
+    background-color: rgb(142, 142, 177);
+}
+
+#contenedor {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 10%;
+}
+
+#imagen {
+    background-image: url(../IMG/imagenvioleta.jpg);
+    /*../ es para salir de la carpeta y se puede poner con comillas o sin*/
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+
+
+/*----------  MEDIDAS DE CONTENEDORES  -----------*/
+/*anchos*/
+.w50 {
+    width: 50%;
+}
+
+/*alturas*/
+.h400 {
+    height: 400px;
+}
+
+
+/*-------------- ORGANIZACION ----------------*/
+/* .fl{
+    float: left;
+}
+
+.clearb{
+    clear: both;
+} */
+
+.pd20 {
+    padding: 50px;
+}
+
+.dflex {
+    display: flex;
+}
+
+.columna {
+    flex-direction: column;
+}
+
+.spb{
+    justify-content: space-between;
+}
+.center{
+    justify-content: center;
+}
+
+
+/*--------------- MEDIA QUERIES ---------------*/
+/*PARA QUE SEA RESPONSIVE*/
+/*seccion para establecer BREAKPOINTS*/
+
+/* @media screen and (max-width:1024px) {
+    .dflex{
+        flex-direction: column;
+    }
+    .violeta{
+        background-color: rgb(0, 255, 255);
+        transform: scale(0.5);
+    }
+}   */
+
+@media screen and (max-width:667px) {
+    .flexdir {
+        flex-direction: column-reverse;
+    }
+
+    .w50 {
+        width: 100%;
+    }
+
+    .colm {
+        flex-direction: column;
+    }
+
+    #imagen.h400 {
+        height: 200px;
+    }
+}
