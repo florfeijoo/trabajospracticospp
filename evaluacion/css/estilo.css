@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Tilt+Warp&display=swap&#39');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dflex {
+    display: flex;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.space{
+    justify-content: space-between;
+}
+
+.fdcol {
+    flex-direction: column;
+}
+
+.centrar_h {
+    justify-content: center;
+}
+
+.centrar_v {
+    align-items: center;
+}
+
+.posrel {
+    position: relative;
+}
+
+.posab {
+    position: absolute;
+}
+
+.ptext {
+    padding: 20px;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.margin{
+    margin-bottom: 4%;
+}
+
+/*CONTENEDOR SCROLLBAR*/
+::-webkit-scrollbar {
+    height: 5px;
+    /*scroll horizontal*/
+    width: 2px;
+    border-radius: 5px;
+}
+
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {
+    background: rgb(196, 154, 135);
+    border-radius: 5px;
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(185, 139, 139);
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.portada {
+    position: relative;
+    height: 150px;
+    background-color: rgb(212, 150, 150);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    padding: 7%;
+}
+
+.busqueda {
+    position: absolute;
+    bottom: -90px;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    background-color: #e0a9a9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.339);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.busqueda input[type="search"] {
+    height: 100%;
+    width: calc(100% - 120px);
+    border: 0;
+    font-size: 12pt;
+    padding: 14px;
+}
+
+.busqueda input[type="search"]:focus {
+    outline: 0;
+    font-size: 14pt;
+}
+
+.busqueda input[type="submit"] {
+    color: rgba(54, 54, 54, 0.609);
+}
+
+.busqueda input[type="submit"] {
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: 0;
+    font-size: 26pt !important;
+}
+
+.busqueda input[type="submit"]:active {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.164);
+    font-size: 22pt !important;
+}
+
+.icono{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.categorias ul li,
+.categoriasnew ul li{
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    gap: 20px;
+    height: 70px;
+}
+
+.categorias ul,
+.categoriasnew ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    overflow-x: scroll;
+
+}
+
+.categoriasnew ul {
+    overflow-x: hidden;
+    justify-content: space-evenly;
+}
+
+.categorias,
+.categoriasnew {
+    /* background-color: blanchedalmond; */
+    height: 120px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.categorias ul li:not(:hover) {
+    color: gray;
+    transform: scale(0.8)
+}
+
+.item_tarjeta {
+    background-color: hwb(193 52% 30%);
+    height: 250px;
+    width: 40%;
+    gap: 5px;
+    border-radius: 15px;
+}
+
+.img_foto {
+    height: 170px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img_foto img, .img_icono img  {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.circulo {
+    overflow: hidden;
+    border-radius: 5%;
+    aspect-ratio: 1 / 1;
+}
+
+.img_icono {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icono {
+    overflow: hidden;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.txt_foto {
+    gap: 10px
+}
+
+.sombra {
+    box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.308)
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(212, 150, 150);
+    width: 100%;
+    padding: 10px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+    color: black
+}
+
+footer .active {
+    color: black;
+    font-weight: 700;
+}
+
+body{
+    background-color: rgb(233, 204, 204);
+}
